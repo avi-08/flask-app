@@ -21,7 +21,7 @@ def index():
         visits = "<i>redis connection error</i>"
     name = os.environ.get('HELLO_NAME') or load_config('name')
     hostname = socket.gethostname()
-    html = "<h3>hello {name}</h3>" \
+    html = "<h3>hello folks! welcome {name}</h3>" \
            "<b>host:</b> {hostname}<br/>" \
            "<b>visits:</b> {visits}"
     return html.format(name=name, hostname=hostname, visits=visits)
