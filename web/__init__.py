@@ -7,3 +7,6 @@ def create_app(debug=False):
     app.debug = debug
     app.register_blueprint(api)
     return app
+
+def get_hello():
+    return 'hello'
