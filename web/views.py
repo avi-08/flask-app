@@ -24,8 +24,9 @@ def index():
         visits = "<i>redis connection error</i>"
     name = os.environ.get('HELLO_NAME') or load_config('name')
     hostname = socket.gethostname()
-    html = "<h3>hello {name}</h3>" \
+    html = "<h3>HELLO {name}</h3>" \
            "<b>host:</b> {hostname}<br/>" \
            "<b>visits:</b> {visits}" \
-           "<a href=\"https://www.vmware.com\"><b><u>VMware</u></b></a>"
-    return html.format(name=name, hostname=hostname, visits=visits)
+           "<b>confidential data. do not share with unauthorized.</b>" \
+           "<a href=\"https://www.google.com\">Search anything</a>"
+    return html.format(name=name, hostname=hostname, visits=visits)>
