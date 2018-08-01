@@ -29,4 +29,4 @@ def index():
            "<b>visits:</b> {visits}" \
            "<b>confidential data. do not share with unauthorized.</b>" \
            "<a href=\"https://www.google.com\">Search anything</a>"
-    return html.format(name=name, hostname=hostname, visits=visits)>
+    return html.format(name=name, hostname=hostname, visits=visits)
