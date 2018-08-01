@@ -8,6 +8,9 @@ api = Blueprint('api', __name__)
 
 
 def load_config(value):
+    """
+    value: key for which the value is to be loaded from configuration file
+    """
     with open('config.yml') as f:
         data = yaml.load(f)
     return data[value]
