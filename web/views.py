@@ -8,9 +8,6 @@ api = Blueprint('api', __name__)
 
 
 def load_config(value):
-    """
-    value: key for which the value is to be loaded from configuration file
-    """
     with open('config.yml') as f:
         data = yaml.load(f)
     return data[value]
@@ -28,5 +25,6 @@ def index():
            "<b>host:</b> {hostname}<br/>" \
            "<b>visits:</b> {visits}" \
            "<b>confidential data. do not share with unauthorized.</b>" \
-           "<a href=\"https://www.google.com\">Search anything</a>"
+           "<a href=\"https://www.google.com\">Search anything</a>" \
+           "<h1> This means nothing</h1>"
     return html.format(name=name, hostname=hostname, visits=visits)
