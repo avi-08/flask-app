@@ -10,3 +10,6 @@ def create_app(debug=False):
 
 def get_hello():
     return 'hello'
+
+def get_bye():
+    return 'bye!'
